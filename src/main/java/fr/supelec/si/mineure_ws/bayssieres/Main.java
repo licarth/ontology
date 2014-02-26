@@ -1,3 +1,4 @@
+package fr.supelec.si.mineure_ws.bayssieres;
 import java.awt.Dimension;
 import java.io.InputStream;
 import java.util.List;
