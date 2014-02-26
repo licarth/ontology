@@ -34,7 +34,7 @@ public class Main {
 				throw new IllegalArgumentException("File: " + inputFileName + " not found");
 			}
 			inf.read(in, "");
-			
+//			Comm
 			
 //			inf.read("http://www.imdb.com/title/tt0111161/?ref_=chttp_tt_1");
 //						String URI = "http://www.semanticweb.org/ontologies/2012/0/SBIRS.owl";
