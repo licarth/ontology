@@ -1,3 +1,4 @@
+package fr.supelec.si.mineure_ws.ontology.distance;
 
 public abstract class LangBased implements StringDistanceComparator {
 
