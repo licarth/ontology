@@ -5,7 +5,7 @@ import java.util.HashMap;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.reasoner.rulesys.impl.TempNodeCache.NodePair;
 
-public class ComparisonResult {
+public class StringBasedComparisonResult {
 	private OntModel ontology1;
 	private OntModel ontology2;
 	
