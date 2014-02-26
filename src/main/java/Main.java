@@ -35,7 +35,9 @@ public class Main {
 			}
 			inf.read(in, "");
 			
-			//			String URI = "http://www.semanticweb.org/ontologies/2012/0/SBIRS.owl";
+			
+//			inf.read("http://www.imdb.com/title/tt0111161/?ref_=chttp_tt_1");
+//						String URI = "http://www.semanticweb.org/ontologies/2012/0/SBIRS.owl";
 
 //			ExtendedIterator classes = inf.listClasses();
 //			
@@ -62,10 +64,6 @@ public class Main {
 				}
 			}
 			
-			
-			
-			
-			
 //			for (OntClass ontClass : classes) {
 //				
 //			}
@@ -86,7 +84,7 @@ public class Main {
 			 
 //			 vv.getRenderContext().setEdge
 			 
-			 vv.setPreferredSize(new Dimension(350,350)); //Sets the viewing area size
+			 vv.setPreferredSize(new Dimension(700,700)); //Sets the viewing area size
 			 
 			 JFrame frame = new JFrame("Simple Graph View");
 			 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
