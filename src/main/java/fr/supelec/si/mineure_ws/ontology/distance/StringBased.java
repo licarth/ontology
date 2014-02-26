@@ -7,9 +7,15 @@ public abstract class StringBased implements StringDistanceComparator {
 	}
 
 	@Override
-	public double getDistance(String word1, String word2) {
+	public double getSimilarity(String word1, String word2) {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+	
+	static public String normalizeWord(String word){
+		String nWord = word.toLowerCase();
+		//TODO Other transformations to implement
+		return nWord;
 	}
 
 }

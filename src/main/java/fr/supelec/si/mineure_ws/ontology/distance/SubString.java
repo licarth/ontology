@@ -1,15 +1,16 @@
 package fr.supelec.si.mineure_ws.ontology.distance;
 
-public abstract class LangBased implements StringDistanceComparator {
+public class SubString extends StringBased {
 
-	public LangBased() {
+	public SubString() {
 		// TODO Auto-generated constructor stub
 	}
-
-	@Override
+	
 	public double getSimilarity(String word1, String word2) {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		
+	
 	}
 
+	public String 
 }

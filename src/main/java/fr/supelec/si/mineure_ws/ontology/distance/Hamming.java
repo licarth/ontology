@@ -6,28 +6,25 @@ public class Hamming extends StringBased {
 		// TODO Auto-generated constructor stub
 	}
 
-	public double getDistance(String word1, String word2) {
+	public double getSimilarity(String word1, String word2) {
 		String nWord1 = normalizeWord(word1);
 		String nWord2 = normalizeWord(word2);
 		int minOfLength = (nWord1.length() <= nWord2.length()) ? nWord1.length() : nWord2.length();
 		int maxOfLength = (nWord1.length() <= nWord2.length()) ? nWord2.length() : nWord1.length();
+		System.out.println("min = " + minOfLength);
+		System.out.println("max = " + maxOfLength);
 		int counter = 0;
 		
 		for(int i = 0; i<minOfLength; i++){
 			if(nWord1.charAt(i)!=nWord2.charAt(i))
 				counter++;
 		}
+		System.out.println("counter = " + counter);
 		
-		int result = counter + Math.abs(maxOfLength - minOfLength);
-		
-		return 0;
+		double result = (double) (counter + Math.abs(maxOfLength - minOfLength))/maxOfLength;
+		return 1 - result;
 	}
 	
-	static public String normalizeWord(String word){
-		String nWord = word.toLowerCase();
-		//TODO Other transformations to implement
-		return nWord;
-	}
 	
 
 }
