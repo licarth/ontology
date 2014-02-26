@@ -11,8 +11,8 @@ public class Hamming extends StringBased {
 		String nWord2 = normalizeWord(word2);
 		int minOfLength = (nWord1.length() <= nWord2.length()) ? nWord1.length() : nWord2.length();
 		int maxOfLength = (nWord1.length() <= nWord2.length()) ? nWord2.length() : nWord1.length();
-		System.out.println("min = " + minOfLength);
-		System.out.println("max = " + maxOfLength);
+		//System.out.println("min = " + minOfLength);
+		//System.out.println("max = " + maxOfLength);
 		int counter = 0;
 		
 		for(int i = 0; i<minOfLength; i++){
