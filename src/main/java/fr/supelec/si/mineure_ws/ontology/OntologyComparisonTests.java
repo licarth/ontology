@@ -6,11 +6,8 @@ public class OntologyComparisonTests {
 
 	@Test
 	public void test() {
-		
 		OntologyComparator comparator = OntologyComparator.Builder.buildFromRDFFiles("resources/example.owl", "resources/example.owl");
-		
-		comparator.stringBasedCompare(StringComparisonMethod.HAMMING).print();
+		comparator.stringBasedCompare(StringComparisonMethod.SUBSTRING).print();
 		
 	}
-
 }
