@@ -15,8 +15,6 @@ public class SubString extends StringBased {
 		
 		int t = longestCommonSubstring(nWord1,nWord2);
 		
-		System.out.println("longest = " + t);
-		
 		double result = (double) (2*t)/(length1 + length2);
 		return result;	
 	}
