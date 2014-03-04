@@ -2,7 +2,7 @@ package fr.supelec.si.mineure_ws.ontology;
 
 import org.junit.Test;
 
-public class OntologyComparisonTests {
+public class OntologyComparisonTest {
 
 	@Test
 	public void test() {
