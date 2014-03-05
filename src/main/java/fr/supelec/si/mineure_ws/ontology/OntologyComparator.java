@@ -10,6 +10,14 @@ import com.hp.hpl.jena.util.iterator.ExtendedIterator;
 
 import edu.uci.ics.jung.graph.util.Pair;
 
+/**
+ * 
+ * A general class to compare two ontologies.
+ * This class has methods that 
+ * 
+ * @author thomas
+ *
+ */
 public class OntologyComparator {
 
 	static public class Builder {
@@ -35,9 +43,9 @@ public class OntologyComparator {
 	private OntModel ontology1;
 	private OntModel ontology2;
 
-	public StringBasedComparisonResult stringBasedCompare(StringComparisonMethod method) {
+	public ComparisonResult stringBasedCompare(StringComparisonMethod method) {
 
-		StringBasedComparisonResult res = new StringBasedComparisonResult(ontology1, ontology2);
+		ComparisonResult res = new ComparisonResult(ontology1, ontology2);
 	
 		ExtendedIterator<OntClass> classes1It = ontology1.listClasses();
 		while (classes1It.hasNext()) {
@@ -47,7 +55,7 @@ public class OntologyComparator {
 			while (classes2It.hasNext()) {
 				OntClass class2 = classes2It.next();
 				double similarity = method.getComparisonStrategy().getSimilarity(class1.getLocalName(), class2.getLocalName());
-				res.comparisonMatrix.put(new Pair(class1, class2), similarity);
+				res.similarityMatrix.put(new Pair(class1, class2), similarity);
 			}
 		}
 		return res;

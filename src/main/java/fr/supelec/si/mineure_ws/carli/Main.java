@@ -91,7 +91,9 @@ public class Main {
 			 frame.getContentPane().add(vv); 
 			 frame.pack();
 			 frame.setVisible(true); 
-
+			 
+			 
+			 
 			
 //			Graph<RDFNode, Statement> g = new JenaJungGraph(inf);
 //			
