@@ -8,6 +8,18 @@ public class testRita {
 		RiWordnet wordnet = new RiWordnet();
 		String word = "runner";
 		String[] pos = wordnet.getPos(word);
+
+		System.out.println("DABORD");
+		
+		for(int k = 0; k<pos.length; k++){
+			String[] allSynsets = wordnet.getAllSynsets(word, pos[k]);
+			for(int i = 0; i<allSynsets.length; i++) {
+				System.out.println(allSynsets[i]);
+			}
+		}
+
+
+		System.out.println("ENSUITE");
 		for(int j = 0; j<pos.length; j++){
 			int[] ids = wordnet.getSenseIds(word, pos[j]);
 			for (int i = 0; i < ids.length; i++) {
@@ -26,7 +38,7 @@ public class testRita {
 				//System.out.println("n-------------------------");
 			}
 		}
-		
+
 		String[] synnn = wordnet.getSynonyms(word,pos[0]);
 		for(int i = 0; i<synnn.length; i++) System.out.println(synnn[i] + " ");
 
