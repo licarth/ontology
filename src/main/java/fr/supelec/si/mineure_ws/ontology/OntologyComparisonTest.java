@@ -9,7 +9,7 @@ public class OntologyComparisonTest {
 	@Test
 	public void test() throws IOException {
 		String prefix = "amazon<-->bookstore";
-		OntologyComparator comparator = OntologyComparator.Builder.buildFromRDFFiles("resources/example.owl", "resources/example.owl");
+		OntologyComparator comparator = OntologyComparator.Builder.buildFromRDFFiles("resources/amazon.owl", "resources/bookstore.owl");
 		comparator.stringBasedCompare(StringComparisonMethod.HAMMING).printCsv(prefix+"-"+"hamming");
 		comparator.stringBasedCompare(StringComparisonMethod.RITA).printCsv(prefix+"-"+"rita");
 		comparator.stringBasedCompare(StringComparisonMethod.SUBSTRING).printCsv(prefix+"-"+"substring");

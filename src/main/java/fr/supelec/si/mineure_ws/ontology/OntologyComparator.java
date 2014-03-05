@@ -46,7 +46,7 @@ public class OntologyComparator {
 	public ComparisonResult stringBasedCompare(StringComparisonMethod method) {
 
 		ComparisonResult res = new ComparisonResult(ontology1, ontology2);
-	
+
 		ExtendedIterator<OntClass> classes1It = ontology1.listClasses();
 		while (classes1It.hasNext()) {
 			OntClass class1 = classes1It.next();
@@ -54,11 +54,13 @@ public class OntologyComparator {
 
 			while (classes2It.hasNext()) {
 				OntClass class2 = classes2It.next();
-				double similarity = method.getComparisonStrategy().getSimilarity(class1.getLocalName(), class2.getLocalName());
-				res.similarityMatrix.put(new Pair(class1, class2), similarity);
+				if (class1.getLocalName() != null && class2.getLocalName() != null){
+					double similarity = method.getComparisonStrategy().getSimilarity(class1.getLocalName(), class2.getLocalName());
+					res.similarityMatrix.put(new Pair(class1, class2), similarity);
+				}
 			}
 		}
 		return res;
 	}
-	
+
 }
