@@ -15,6 +15,8 @@ public class RitaDistance extends LangBased {
 		RiWordnet wordnet = new RiWordnet();
 		String pos = wordnet.getBestPos(nWord1);
 
+		if (pos == null) return 0.0;
+		
 		return 1.0 - wordnet.getDistance(nWord1, nWord2, pos);
 	}
 

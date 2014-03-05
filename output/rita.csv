@@ -1,0 +1,6 @@
+, Car, Bus, AirTransport, LandTransport, Transport
+Car, 1.00, 0.92, 0.00, 0.00, 0.70
+Bus, 0.92, 1.00, 0.00, 0.00, 0.78
+AirTransport, 0.00, 0.00, 0.00, 0.00, 0.00
+LandTransport, 0.00, 0.00, 0.00, 0.00, 0.00
+Transport, 0.70, 0.78, 0.00, 0.00, 1.00
