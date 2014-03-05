@@ -26,12 +26,12 @@ public class ComparisonResult {
 		for (OntClass class1 : ontology1.listClasses().toList()) {
 			for (OntClass class2 : ontology2.listClasses().toList()) {
 				System.out.println(class1.getLocalName()+", "+ class2.getLocalName()+" : "+similarityMatrix.get(new Pair<>(class1, class2)).toString());
-			}
+			} 
 		}
 	}
 
-	public void printCsv() throws IOException{
-		FileWriter outputFile = new FileWriter(String.format("output/%s-%s.csv", "1", "2"));
+	public void printCsv(String fileTitle) throws IOException{
+		FileWriter outputFile = new FileWriter(String.format("output/"+fileTitle+".csv", "1", "2"));
 
 		//Print col headers:
 		StringBuffer sb = new StringBuffer();
@@ -45,7 +45,11 @@ public class ComparisonResult {
 		for (OntClass class1 : ontology1.listClasses().toList()) {
 			sb.append(class1.getLocalName());
 			for (OntClass class2 : ontology2.listClasses().toList()) {
-				sb.append(", "+String.format(Locale.US, "%.2f", similarityMatrix.get(new Pair<>(class1, class2)).doubleValue()));
+				Pair<OntClass> pair = new Pair<>(class1, class2);
+				sb.append(", ");
+				if (similarityMatrix.containsKey(pair)){
+					sb.append(String.format(Locale.US, "%.2f", similarityMatrix.get(pair).doubleValue()));
+				}
 			}
 			sb.append("\n");
 		}
