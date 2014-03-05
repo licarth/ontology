@@ -12,4 +12,9 @@ public abstract class LangBased implements StringDistanceComparator {
 		return 0;
 	}
 
+	static public String normalizeWord(String word){
+		String nWord = word.toLowerCase();
+		//TODO Other transformations to implement
+		return nWord;
+	}
 }
