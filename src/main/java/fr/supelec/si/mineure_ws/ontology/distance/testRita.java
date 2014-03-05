@@ -6,7 +6,7 @@ public class testRita {
 
 	public static void main(String[] args) {
 		RiWordnet wordnet = new RiWordnet();
-		String word = "runner";
+		String word = "author";
 		String[] pos = wordnet.getPos(word);
 
 		System.out.println("DABORD");
@@ -39,8 +39,8 @@ public class testRita {
 			}
 		}
 
-		String[] synnn = wordnet.getSynonyms(word,pos[0]);
-		for(int i = 0; i<synnn.length; i++) System.out.println(synnn[i] + " ");
+//		String[] synnn = wordnet.getSynonyms(word,pos[0]);
+//		for(int i = 0; i<synnn.length; i++) System.out.println(synnn[i] + " ");
 
 		//		// Synonyms for all senses
 		//		String word2 = "car";

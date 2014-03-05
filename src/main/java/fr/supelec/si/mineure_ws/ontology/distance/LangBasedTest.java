@@ -8,8 +8,8 @@ public class LangBasedTest {
 
 	@Before
 	public void setup(){
-		this.word1 = "run";
-		this.word2 = "sygb";
+		this.word1 = "author";
+		this.word2 = "writer";
 	}
 	
 	@Test

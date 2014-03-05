@@ -26,8 +26,10 @@ public class Synonyms extends LangBased {
 			Vector<String> allSynonyms = new Vector<String>();
 			for(int k = 0; k<pos.length; k++){
 				String[] allSynsets = wordnet.getAllSynsets(nWord1, pos[k]);
-				for(int i = 0; i<allSynsets.length; i++) {
-					allSynonyms.add(allSynsets[i]);
+				if(allSynsets!=null){
+					for(int i = 0; i<allSynsets.length; i++) {
+						allSynonyms.add(allSynsets[i]);
+					}
 				}
 			}
 
