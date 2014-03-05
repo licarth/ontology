@@ -9,6 +9,7 @@ import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.ontology.OntModel;
 
 import edu.uci.ics.jung.graph.util.Pair;
+import fr.supelec.si.mineure_ws.ontology.align.AlignmentFactory;
 
 public class ComparisonResult {
 	public ComparisonResult(OntModel ontology1, OntModel ontology2) {
@@ -56,22 +57,15 @@ public class ComparisonResult {
 		
 		outputFile.append(sb.toString());
 		outputFile.close();
-//		it1 = ontology1.listClasses();
-//		while (it1.hasNext()) {
-//			//print line header :
-//			it.
-//			OntClass next = it1.next();
-//			sb.append(next.getLocalName()+((it1.hasNext()) ? ", " :""));
-//		}
-//		ExtendedIterator<OntClass> it1 = ontology1.listClasses();
-//		while (it1.hasNext()) {
-//			OntClass next = it1.next();
-//			sb.append(next.getLocalName()+((it1.hasNext()) ? ", " :""));
-//		}
-	
-		
-		
-		
 	}
 
+	public AlignmentFactory generateAlignment() {
+		
+		//Apply filtering
+		
+		
+		
+		return null;
+	}
+	
 }
