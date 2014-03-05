@@ -6,9 +6,15 @@ public class testRita {
 
 	public static void main(String[] args) {
 		RiWordnet wordnet = new RiWordnet();
-		String word = "author";
+		String word = "run";
 		String[] pos = wordnet.getPos(word);
 
+		System.out.println("HYPERNYMS");
+		String[] hy = wordnet.getAllHyponyms(word, pos[0]);
+		System.out.println(hy);
+		for(int i = 0; i<hy.length; i++) System.out.println(hy[i]);
+		
+		
 		System.out.println("DABORD");
 		
 		for(int k = 0; k<pos.length; k++){
