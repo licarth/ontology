@@ -1,9 +1,8 @@
 package fr.supelec.si.mineure_ws.ontology;
 
-import static org.junit.Assert.*;
-
 import java.io.IOException;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class OntologyComparisonTest {
@@ -19,6 +18,7 @@ public class OntologyComparisonTest {
 	}
 	
 	@Test
+	@Ignore
 	public void align() throws Exception {
 		String prefix = "amazon<-->bookstore";
 		OntologyComparator comparator = OntologyComparator.Builder.buildFromRDFFiles("resources/amazon.owl", "resources/bookstore.owl");
