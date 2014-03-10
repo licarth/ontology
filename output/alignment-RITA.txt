@@ -1,0 +1,10 @@
+Book -- Book : 1.0
+Human -- Human : 1.0
+Writer -- Author : 1.0
+Paperback -- Novel : 0.8888888880610466
+Artist -- Drawer : 0.8571428507566452
+User -- Owner : 0.7999999970197678
+Music -- Essay : 0.75
+Manager -- Client : 0.5714285671710968
+Product -- Bookstore : 0.45454543828964233
+Electronic_Commerce_Site -- Comics : 0.4285714030265808

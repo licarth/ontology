@@ -21,5 +21,10 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="lib/RiTaWN.jar"/>
 	<classpathentry kind="lib" path="lib/supportWN.jar"/>
+	<classpathentry kind="lib" path="lib/align.jar"/>
+	<classpathentry kind="lib" path="lib/alignsvc.jar"/>
+	<classpathentry kind="lib" path="lib/ontowrap.jar"/>
+	<classpathentry kind="lib" path="lib/procalign.jar"/>
+	<classpathentry kind="lib" path="lib/simpack-0.91-bin.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

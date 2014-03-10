@@ -1,0 +1,10 @@
+Writer -- Author : 1.0
+Artist -- Drawer : 0.85
+Book -- Novel : 0.85
+Product -- Book : 0.85
+Electronic_Commerce_Site -- Comics : 0.0
+Hardcover -- Client : 0.0
+Music -- Bookstore : 0.0
+Paperback -- Owner : 0.0
+Movie -- Essay : 0.0
+Manager -- Human : 0.0
